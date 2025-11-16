@@ -1,0 +1,524 @@
+Fetching dolfin
+Using saved parent location: bzr+ssh://bazaar.launchpad.net/%2Bbranch/dolfin/
+No revisions to pull.                                                                                                  
+Building dolfin
+-- Boost version: 1.47.0
+-- Found the following Boost libraries:
+--   filesystem
+--   program_options
+--   system
+--   thread
+--   iostreams
+--   mpi
+-- Checking for package 'Armadillo'
+-- Checking for package 'SCOTCH-PT'
+-- Performing test SCOTCH_TEST_RUNS
+-- Performing test SCOTCH_TEST_RUNS - Success
+-- Checking for package 'AMD'
+-- Checking for package 'BLAS'
+-- Checking for package 'UMFPACK'
+-- Checking for package 'AMD'
+-- Checking for package 'BLAS'
+-- Checking for package 'CHOLMOD'
+-- Checking for package 'AMD'
+-- Checking for package 'BLAS'
+-- Checking for package 'LAPACK'
+-- Checking for package 'CHOLMOD'
+-- Checking for package 'AMD'
+-- Checking for package 'BLAS'
+-- Checking for package 'LAPACK'
+-- Checking for package 'Trilinos'
+-- Checking for package 'MTL4'
+-- Checking for package 'BLAS'
+-- Checking for package 'PETSc'
+-- PETSC_DIR is /Users/harish/Work/FEniCS/dev
+-- PETSC_ARCH is empty
+-- Found petscconf.h
+-- PETSc test runs
+-- Checking for package 'SLEPc'
+-- SLEPC_DIR is /Users/harish/Work/FEniCS/dev
+-- SLEPc test runs
+-- Checking for package 'CGAL'
+CMake Warning at CMakeLists.txt:287 (message):
+  HDF5 found, but is not configured to run in parallel.
+
+
+-- Checking for package 'CPPUNIT'
+-- Checking for package 'Sphinx'
+-- 
+-- The following optional packages were found:
+-- -------------------------------------------
+-- (OK) OPENMP
+-- (OK) MPI
+-- (OK) PETSC
+-- (OK) SLEPC
+-- (OK) MTL4
+-- (OK) UMFPACK
+-- (OK) CHOLMOD
+-- (OK) SCOTCH
+-- (OK) PARMETIS
+-- (OK) CGAL
+-- (OK) ZLIB
+-- (OK) PYTHON
+-- (OK) SPHINX
+-- 
+-- The following optional packages were not enabled:
+-- -------------------------------------------------
+-- (--) GMP
+-- 
+-- The following optional packages could not be found:
+-- ---------------------------------------------------
+-- (**) TRILINOS
+-- (**) HDF5
+-- 
+-- Enabling generation of documentation.
+-- Initializing sphinx projects
+-- Enabling generation of html-documentation
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/harish/Work/FEniCS/dev/src/dolfin/dorsal_build_dir
+Scanning dependencies of target dolfin
+[  0%] [  1%] [  1%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/adapt.cpp.o
+Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/AdaptiveLinearVariationalSolver.cpp.o
+Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/AdaptiveNonlinearVariationalSolver.cpp.o
+[  1%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/adaptivesolve.cpp.o
+[  2%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/ErrorControl.cpp.o
+[  2%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/Extrapolation.cpp.o
+[  4%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/GenericAdaptiveVariationalSolver.cpp.o
+[  4%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/GoalFunctional.cpp.o
+[  4%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/LocalAssembler.cpp.o
+[  5%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/marking.cpp.o
+[  5%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/SpecialFacetFunction.cpp.o
+[  6%] Building CXX object dolfin/CMakeFiles/dolfin.dir/adaptivity/TimeSeries.cpp.o
+[  6%] Building CXX object dolfin/CMakeFiles/dolfin.dir/ale/ALE.cpp.o
+[  6%] Building CXX object dolfin/CMakeFiles/dolfin.dir/ale/HarmonicSmoothing.cpp.o
+[  8%] Building CXX object dolfin/CMakeFiles/dolfin.dir/common/init.cpp.o
+[  8%] Building CXX object dolfin/CMakeFiles/dolfin.dir/common/MPI.cpp.o
+[  9%] Building CXX object dolfin/CMakeFiles/dolfin.dir/common/SubSystemsManager.cpp.o
+[  9%] Building CXX object dolfin/CMakeFiles/dolfin.dir/common/timing.cpp.o
+[ 10%] Building CXX object dolfin/CMakeFiles/dolfin.dir/common/utils.cpp.o
+[ 10%] Building CXX object dolfin/CMakeFiles/dolfin.dir/common/Variable.cpp.o
+[ 10%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/assemble.cpp.o
+[ 12%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/Assembler.cpp.o
+[ 12%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/AssemblerTools.cpp.o
+[ 13%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/BoundaryCondition.cpp.o
+[ 13%] [ 13%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/DofMap.cpp.o
+Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/DirichletBC.cpp.o
+[ 14%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/DofMapBuilder.cpp.o
+[ 14%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/DomainAssigner.cpp.o
+[ 16%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/Equation.cpp.o
+[ 16%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/FiniteElement.cpp.o
+[ 16%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/Form.cpp.o
+[ 17%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/LinearVariationalProblem.cpp.o
+[ 17%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/LinearVariationalSolver.cpp.o
+[ 18%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/NonlinearVariationalProblem.cpp.o
+[ 18%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/NonlinearVariationalSolver.cpp.o
+[ 18%] [ 20%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/OpenMpAssembler.cpp.o
+Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/PeriodicBC.cpp.o
+[ 20%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/PointSource.cpp.o
+[ 20%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/solve.cpp.o
+[ 21%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/SparsityPatternBuilder.cpp.o
+/Users/harish/Work/FEniCS/dev/src/dolfin/dolfin/fem/OpenMpAssembler.cpp: In static member function 'static void dolfin::OpenMpAssembler::assemble_cells(dolfin::GenericTensor&, const dolfin::Form&, dolfin::UFC&, const dolfin::MeshFunction<unsigned int>*, std::vector<double, std::allocator<double> >*)':
+/Users/harish/Work/FEniCS/dev/src/dolfin/dolfin/fem/OpenMpAssembler.cpp:178: warning: iteration variable 'cell_index' is unsigned
+/Users/harish/Work/FEniCS/dev/src/dolfin/dolfin/fem/OpenMpAssembler.cpp: In static member function 'static void dolfin::OpenMpAssembler::assemble_cells_and_exterior_facets(dolfin::GenericTensor&, const dolfin::Form&, dolfin::UFC&, const dolfin::MeshFunction<unsigned int>*, std::vector<double, std::allocator<double> >*)':
+/Users/harish/Work/FEniCS/dev/src/dolfin/dolfin/fem/OpenMpAssembler.cpp:296: warning: iteration variable 'cell_index' is unsigned
+/Users/harish/Work/FEniCS/dev/src/dolfin/dolfin/fem/OpenMpAssembler.cpp: In static member function 'static void dolfin::OpenMpAssembler::assemble_interior_facets(dolfin::GenericTensor&, const dolfin::Form&, dolfin::UFC&, const dolfin::MeshFunction<unsigned int>*, std::vector<double, std::allocator<double> >*)':
+/Users/harish/Work/FEniCS/dev/src/dolfin/dolfin/fem/OpenMpAssembler.cpp:455: warning: iteration variable 'facet_index' is unsigned
+[ 21%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/SystemAssembler.cpp.o
+[ 22%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/UFC.cpp.o
+[ 22%] Building CXX object dolfin/CMakeFiles/dolfin.dir/fem/VariationalProblem.cpp.o
+[ 22%] Building CXX object dolfin/CMakeFiles/dolfin.dir/function/CoefficientAssigner.cpp.o
+[ 24%] Building CXX object dolfin/CMakeFiles/dolfin.dir/function/Constant.cpp.o
+[ 24%] Building CXX object dolfin/CMakeFiles/dolfin.dir/function/Expression.cpp.o
+[ 25%] Building CXX object dolfin/CMakeFiles/dolfin.dir/function/Function.cpp.o
+[ 25%] Building CXX object dolfin/CMakeFiles/dolfin.dir/function/FunctionSpace.cpp.o
+[ 25%] Building CXX object dolfin/CMakeFiles/dolfin.dir/function/GenericFunction.cpp.o
+[ 26%] Building CXX object dolfin/CMakeFiles/dolfin.dir/function/SpecialFunctions.cpp.o
+[ 26%] Building CXX object dolfin/CMakeFiles/dolfin.dir/function/SubSpace.cpp.o
+[ 28%] Building CXX object dolfin/CMakeFiles/dolfin.dir/graph/BoostGraphInterface.cpp.o
+[ 28%] Building CXX object dolfin/CMakeFiles/dolfin.dir/graph/GraphBuilder.cpp.o
+[ 28%] Building CXX object dolfin/CMakeFiles/dolfin.dir/graph/GraphColoring.cpp.o
+[ 29%] Building CXX object dolfin/CMakeFiles/dolfin.dir/graph/MatrixRenumbering.cpp.o
+[ 29%] Building CXX object dolfin/CMakeFiles/dolfin.dir/graph/ParMETIS.cpp.o
+[ 29%] Building CXX object dolfin/CMakeFiles/dolfin.dir/graph/SCOTCH.cpp.o
+[ 30%] Building CXX object dolfin/CMakeFiles/dolfin.dir/graph/ZoltanInterface.cpp.o
+[ 30%] Building CXX object dolfin/CMakeFiles/dolfin.dir/intersection/IntersectionOperator.cpp.o
+[ 32%] Building CXX object dolfin/CMakeFiles/dolfin.dir/intersection/PrimitiveIntersector.cpp.o
+[ 32%] Building CXX object dolfin/CMakeFiles/dolfin.dir/intersection/Triangle_3_Tetrahedron_3_do_intersect_SCK.cpp.o
+[ 33%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/BinaryFile.cpp.o
+[ 33%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/File.cpp.o
+[ 34%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/GenericFile.cpp.o
+[ 34%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/RAWFile.cpp.o
+[ 36%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/VTKFile.cpp.o
+[ 36%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/VTKWriter.cpp.o
+[ 37%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/XMLFile.cpp.o
+[ 37%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/XMLFunctionData.cpp.o
+[ 37%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/XMLFunctionPlotData.cpp.o
+[ 38%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/XMLLocalMeshSAX.cpp.o
+[ 38%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/XMLMesh.cpp.o
+[ 38%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/XMLParameters.cpp.o
+[ 40%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/xmlutils.cpp.o
+[ 40%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/XMLVector.cpp.o
+[ 41%] Building CXX object dolfin/CMakeFiles/dolfin.dir/io/XYZFile.cpp.o
+[ 41%] [ 41%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/BlockMatrix.cpp.o
+Building CXX object dolfin/CMakeFiles/dolfin.dir/la/BlockVector.cpp.o
+[ 42%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/CholmodCholeskySolver.cpp.o
+[ 42%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/DefaultFactory.cpp.o
+[ 44%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/EpetraFactory.cpp.o
+[ 44%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/EpetraKrylovSolver.cpp.o
+[ 44%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/EpetraLUSolver.cpp.o
+[ 45%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/EpetraMatrix.cpp.o
+[ 45%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/EpetraSparsityPattern.cpp.o
+[ 46%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/EpetraVector.cpp.o
+[ 46%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/GenericMatrix.cpp.o
+[ 46%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/ITLKrylovSolver.cpp.o
+[ 48%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/KrylovSolver.cpp.o
+[ 48%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/LinearSolver.cpp.o
+[ 48%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/LUSolver.cpp.o
+[ 49%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/MTL4Factory.cpp.o
+[ 49%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/MTL4Matrix.cpp.o
+[ 50%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/MTL4Vector.cpp.o
+[ 50%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScBaseMatrix.cpp.o
+[ 50%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScFactory.cpp.o
+[ 52%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScKrylovMatrix.cpp.o
+[ 52%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScKrylovSolver.cpp.o
+[ 53%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScLUSolver.cpp.o
+[ 53%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScMatrix.cpp.o
+[ 53%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScPreconditioner.cpp.o
+[ 54%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScUserPreconditioner.cpp.o
+[ 54%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/PETScVector.cpp.o
+[ 56%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/SingularSolver.cpp.o
+[ 56%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/SLEPcEigenSolver.cpp.o
+[ 56%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/solve.cpp.o
+[ 57%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/SparsityPattern.cpp.o
+[ 57%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/STLFactory.cpp.o
+[ 57%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/STLMatrix.cpp.o
+[ 58%] [ 58%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/TrilinosPreconditioner.cpp.o
+Building CXX object dolfin/CMakeFiles/dolfin.dir/la/uBLASDummyPreconditioner.cpp.o
+[ 60%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/uBLASILUPreconditioner.cpp.o
+[ 60%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/uBLASKrylovMatrix.cpp.o
+[ 60%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/uBLASKrylovSolver.cpp.o
+[ 61%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/uBLASVector.cpp.o
+[ 61%] Building CXX object dolfin/CMakeFiles/dolfin.dir/la/UmfpackLUSolver.cpp.o
+[ 61%] Building CXX object dolfin/CMakeFiles/dolfin.dir/log/log.cpp.o
+[ 61%] Building CXX object dolfin/CMakeFiles/dolfin.dir/log/Logger.cpp.o
+[ 61%] Building CXX object dolfin/CMakeFiles/dolfin.dir/log/LogStream.cpp.o
+[ 61%] Building CXX object dolfin/CMakeFiles/dolfin.dir/log/Table.cpp.o
+[ 62%] Building CXX object dolfin/CMakeFiles/dolfin.dir/math/Lagrange.cpp.o
+[ 62%] Building CXX object dolfin/CMakeFiles/dolfin.dir/math/Legendre.cpp.o
+[ 62%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/BoundaryComputation.cpp.o
+[ 64%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/BoundaryMesh.cpp.o
+[ 64%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/Box.cpp.o
+[ 65%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/CellType.cpp.o
+[ 65%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/DynamicMeshEditor.cpp.o
+[ 65%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/Edge.cpp.o
+[ 66%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/Face.cpp.o
+[ 66%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/Facet.cpp.o
+[ 68%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/FacetCell.cpp.o
+[ 68%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/Interval.cpp.o
+[ 68%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/IntervalCell.cpp.o
+[ 69%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/LocalMeshData.cpp.o
+[ 69%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/Mesh.cpp.o
+[ 70%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshColoring.cpp.o
+[ 70%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshConnectivity.cpp.o
+[ 70%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshData.cpp.o
+[ 72%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshDistributed.cpp.o
+[ 72%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshDomains.cpp.o
+[ 72%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshEditor.cpp.o
+[ 73%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshEntity.cpp.o
+[ 73%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshFunction.cpp.o
+[ 74%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshGeometry.cpp.o
+[ 74%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshHierarchy.cpp.o
+[ 74%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshHierarchyAlgorithms.cpp.o
+[ 76%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshOrdering.cpp.o
+[ 76%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshPartitioning.cpp.o
+[ 77%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshRenumbering.cpp.o
+[ 77%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/MeshSmoothing.cpp.o
+[ 78%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/ParallelData.cpp.o
+[ 78%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/Point.cpp.o
+[ 80%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/PointCell.cpp.o
+[ 80%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/Rectangle.cpp.o
+[ 80%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/SubDomain.cpp.o
+[ 81%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/SubMesh.cpp.o
+[ 81%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/TetrahedronCell.cpp.o
+[ 81%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/TopologyComputation.cpp.o
+[ 82%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/TriangleCell.cpp.o
+[ 82%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/UnitCircle.cpp.o
+[ 84%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/UnitCube.cpp.o
+[ 84%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/UnitInterval.cpp.o
+[ 84%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/UnitSphere.cpp.o
+[ 85%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/UnitSquare.cpp.o
+[ 85%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/UnitTetrahedron.cpp.o
+[ 86%] Building CXX object dolfin/CMakeFiles/dolfin.dir/mesh/UnitTriangle.cpp.o
+[ 86%] Building CXX object dolfin/CMakeFiles/dolfin.dir/nls/NewtonSolver.cpp.o
+[ 86%] Building CXX object dolfin/CMakeFiles/dolfin.dir/parameter/GlobalParameters.cpp.o
+[ 86%] Building CXX object dolfin/CMakeFiles/dolfin.dir/parameter/Parameters.cpp.o
+[ 88%] Building CXX object dolfin/CMakeFiles/dolfin.dir/plot/FunctionPlotData.cpp.o
+[ 88%] Building CXX object dolfin/CMakeFiles/dolfin.dir/plot/plot.cpp.o
+[ 88%] Building CXX object dolfin/CMakeFiles/dolfin.dir/quadrature/BarycenterQuadrature.cpp.o
+[ 89%] Building CXX object dolfin/CMakeFiles/dolfin.dir/quadrature/GaussianQuadrature.cpp.o
+[ 89%] Building CXX object dolfin/CMakeFiles/dolfin.dir/quadrature/GaussQuadrature.cpp.o
+[ 89%] Building CXX object dolfin/CMakeFiles/dolfin.dir/quadrature/LobattoQuadrature.cpp.o
+[ 90%] Building CXX object dolfin/CMakeFiles/dolfin.dir/quadrature/Quadrature.cpp.o
+[ 90%] Building CXX object dolfin/CMakeFiles/dolfin.dir/quadrature/RadauQuadrature.cpp.o
+[ 92%] Building CXX object dolfin/CMakeFiles/dolfin.dir/refinement/BisectionRefinement.cpp.o
+[ 92%] Building CXX object dolfin/CMakeFiles/dolfin.dir/refinement/LocalMeshCoarsening.cpp.o
+[ 92%] Building CXX object dolfin/CMakeFiles/dolfin.dir/refinement/LocalMeshRefinement.cpp.o
+[ 93%] Building CXX object dolfin/CMakeFiles/dolfin.dir/refinement/refine.cpp.o
+[ 93%] Building CXX object dolfin/CMakeFiles/dolfin.dir/refinement/RegularCutRefinement.cpp.o
+[ 94%] Building CXX object dolfin/CMakeFiles/dolfin.dir/refinement/RivaraRefinement.cpp.o
+[ 94%] Building CXX object dolfin/CMakeFiles/dolfin.dir/refinement/UniformMeshRefinement.cpp.o
+Linking CXX shared library libdolfin.dylib
+Undefined symbols for architecture x86_64:
+  "boost::archive::detail::basic_iarchive::get_library_version() const", referenced from:
+      void boost::serialization::load<boost::mpi::packed_iarchive, unsigned int, std::allocator<unsigned int> >(boost::mpi::packed_iarchive&, std::vector<unsigned int, std::allocator<unsigned int> >&, unsigned int, mpl_::bool_<true>)in DofMapBuilder.cpp.o
+      void boost::serialization::load<boost::mpi::packed_iarchive, unsigned int, std::allocator<unsigned int> >(boost::mpi::packed_iarchive&, std::vector<unsigned int, std::allocator<unsigned int> >&, unsigned int, mpl_::bool_<true>)in GraphBuilder.cpp.o
+      void boost::serialization::load<boost::mpi::packed_iarchive, double, std::allocator<double> >(boost::mpi::packed_iarchive&, std::vector<double, std::allocator<double> >&, unsigned int, mpl_::bool_<true>)in XMLFile.cpp.o
+      void boost::serialization::load<boost::mpi::packed_iarchive, int, std::allocator<int> >(boost::mpi::packed_iarchive&, std::vector<int, std::allocator<int> >&, unsigned int, mpl_::bool_<true>)in XMLFile.cpp.o
+      void boost::serialization::load<boost::mpi::packed_iarchive, unsigned int, std::allocator<unsigned int> >(boost::mpi::packed_iarchive&, std::vector<unsigned int, std::allocator<unsigned int> >&, unsigned int, mpl_::bool_<true>)in XMLFile.cpp.o
+      void boost::serialization::load<boost::mpi::packed_iarchive, unsigned int, std::allocator<unsigned int> >(boost::mpi::packed_iarchive&, std::vector<unsigned int, std::allocator<unsigned int> >&, unsigned int, mpl_::bool_<true>)in XMLFunctionData.cpp.o
+      void boost::serialization::stl::load_collection<boost::mpi::packed_iarchive, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >, boost::serialization::stl::archive_input_seq<boost::mpi::packed_iarchive, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > > >, boost::serialization::stl::reserve_imp<std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > > > >(boost::mpi::packed_iarchive&, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >&)in XMLFunctionData.cpp.o
+      ...
+  "typeinfo for boost::archive::detail::basic_iarchive", referenced from:
+      boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::load_object_data(boost::archive::detail::basic_iarchive&, void*, unsigned int) constin DofMapBuilder.cpp.o
+      typeinfo for boost::archive::detail::common_iarchive<boost::mpi::packed_iarchive>in DofMapBuilder.cpp.o
+      boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::load_object_data(boost::archive::detail::basic_iarchive&, void*, unsigned int) constin GraphBuilder.cpp.o
+      typeinfo for boost::archive::detail::common_iarchive<boost::mpi::packed_iarchive>in GraphBuilder.cpp.o
+      boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::load_object_data(boost::archive::detail::basic_iarchive&, void*, unsigned int) constin XMLFile.cpp.o
+      boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<bool, std::allocator<bool> > >::load_object_data(boost::archive::detail::basic_iarchive&, void*, unsigned int) constin XMLFile.cpp.o
+      boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<double, std::allocator<double> > >::load_object_data(boost::archive::detail::basic_iarchive&, void*, unsigned int) constin XMLFile.cpp.o
+      ...
+  "typeinfo for boost::archive::detail::basic_oarchive", referenced from:
+      boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::save_object_data(boost::archive::detail::basic_oarchive&, void const*) constin DofMapBuilder.cpp.o
+      typeinfo for boost::archive::detail::common_oarchive<boost::mpi::packed_oarchive>in DofMapBuilder.cpp.o
+      boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::save_object_data(boost::archive::detail::basic_oarchive&, void const*) constin GraphBuilder.cpp.o
+      typeinfo for boost::archive::detail::common_oarchive<boost::mpi::packed_oarchive>in GraphBuilder.cpp.o
+      boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::save_object_data(boost::archive::detail::basic_oarchive&, void const*) constin XMLFile.cpp.o
+      boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<bool, std::allocator<bool> > >::save_object_data(boost::archive::detail::basic_oarchive&, void const*) constin XMLFile.cpp.o
+      boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<double, std::allocator<double> > >::save_object_data(boost::archive::detail::basic_oarchive&, void const*) constin XMLFile.cpp.o
+      ...
+  "boost::archive::detail::basic_oserializer::~basic_oserializer()", referenced from:
+      ___tcf_0 in DofMapBuilder.cpp.o
+      boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::~oserializer()in DofMapBuilder.cpp.o
+      boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::~oserializer()in DofMapBuilder.cpp.o
+      boost::serialization::detail::singleton_wrapper<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::~singleton_wrapper()in DofMapBuilder.cpp.o
+      boost::serialization::detail::singleton_wrapper<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::~singleton_wrapper()in DofMapBuilder.cpp.o
+      ___tcf_0 in GraphBuilder.cpp.o
+      boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::~oserializer()in GraphBuilder.cpp.o
+      ...
+  "boost::archive::detail::basic_iserializer::~basic_iserializer()", referenced from:
+      ___tcf_1 in DofMapBuilder.cpp.o
+      boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::~iserializer()in DofMapBuilder.cpp.o
+      boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::~iserializer()in DofMapBuilder.cpp.o
+      boost::serialization::detail::singleton_wrapper<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::~singleton_wrapper()in DofMapBuilder.cpp.o
+      boost::serialization::detail::singleton_wrapper<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::~singleton_wrapper()in DofMapBuilder.cpp.o
+      ___tcf_1 in GraphBuilder.cpp.o
+      boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >::~iserializer()in GraphBuilder.cpp.o
+      ...
+  "boost::serialization::extended_type_info::key_unregister() const", referenced from:
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<bool, std::allocator<bool> > >::~extended_type_info_typeid()in XMLFile.cpp.o
+      ...
+  "boost::serialization::typeid_system::extended_type_info_typeid_0::type_unregister()", referenced from:
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<bool, std::allocator<bool> > >::~extended_type_info_typeid()in XMLFile.cpp.o
+      ...
+  "boost::serialization::typeid_system::extended_type_info_typeid_0::~extended_type_info_typeid_0()", referenced from:
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::~extended_type_info_typeid()in XMLFile.cpp.o
+      ...
+  "boost::serialization::typeid_system::extended_type_info_typeid_0::extended_type_info_typeid_0(char const*)", referenced from:
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<bool, std::allocator<bool> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<double, std::allocator<double> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<int, std::allocator<int> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in XMLFunctionData.cpp.o
+      ...
+  "boost::serialization::typeid_system::extended_type_info_typeid_0::type_register(std::type_info const&)", referenced from:
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<bool, std::allocator<bool> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<double, std::allocator<double> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<int, std::allocator<int> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in XMLFunctionData.cpp.o
+      ...
+  "boost::serialization::extended_type_info::key_register() const", referenced from:
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in DofMapBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in GraphBuilder.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<bool, std::allocator<bool> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<double, std::allocator<double> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<int, std::allocator<int> > >::extended_type_info_typeid()in XMLFile.cpp.o
+      boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >::extended_type_info_typeid()in XMLFunctionData.cpp.o
+      ...
+  "boost::archive::detail::basic_oserializer::basic_oserializer(boost::serialization::extended_type_info const&)", referenced from:
+      boost::serialization::singleton<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::get_instance()in DofMapBuilder.cpp.o
+      boost::serialization::singleton<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::get_instance()in GraphBuilder.cpp.o
+      boost::serialization::singleton<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::get_instance()in XMLFile.cpp.o
+      boost::serialization::singleton<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<bool, std::allocator<bool> > > >::get_instance()in XMLFile.cpp.o
+      boost::serialization::singleton<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<double, std::allocator<double> > > >::get_instance()in XMLFile.cpp.o
+      boost::serialization::singleton<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<int, std::allocator<int> > > >::get_instance()in XMLFile.cpp.o
+      boost::serialization::singleton<boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::get_instance()in XMLFunctionData.cpp.o
+      ...
+  "boost::archive::detail::basic_iserializer::basic_iserializer(boost::serialization::extended_type_info const&)", referenced from:
+      boost::serialization::singleton<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::get_instance()in DofMapBuilder.cpp.o
+      boost::serialization::singleton<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::get_instance()in GraphBuilder.cpp.o
+      boost::serialization::singleton<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::get_instance()in XMLFile.cpp.o
+      boost::serialization::singleton<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<bool, std::allocator<bool> > > >::get_instance()in XMLFile.cpp.o
+      boost::serialization::singleton<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<double, std::allocator<double> > > >::get_instance()in XMLFile.cpp.o
+      boost::serialization::singleton<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<int, std::allocator<int> > > >::get_instance()in XMLFile.cpp.o
+      boost::serialization::singleton<boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > > >::get_instance()in XMLFunctionData.cpp.o
+      ...
+  "boost::archive::detail::basic_oarchive::end_preamble()", referenced from:
+      boost::mpi::packed_oarchive::save_override(boost::archive::class_name_type const&, int)in DofMapBuilder.cpp.o
+      boost::mpi::packed_oarchive::save_override(boost::archive::class_name_type const&, int)in GraphBuilder.cpp.o
+      boost::mpi::packed_oarchive::save_override(boost::archive::class_name_type const&, int)in XMLFile.cpp.o
+      boost::mpi::packed_oarchive::save_override(boost::archive::class_name_type const&, int)in XMLFunctionData.cpp.o
+      boost::mpi::packed_oarchive::save_override(boost::archive::class_name_type const&, int)in XMLMesh.cpp.o
+      boost::mpi::packed_oarchive::save_override(boost::archive::class_name_type const&, int)in PETScVector.cpp.o
+      boost::mpi::packed_oarchive::save_override(boost::archive::class_name_type const&, int)in SparsityPattern.cpp.o
+      ...
+  "boost::archive::detail::basic_oarchive::~basic_oarchive()", referenced from:
+      boost::archive::detail::common_oarchive<boost::mpi::packed_oarchive>::~common_oarchive()in DofMapBuilder.cpp.o
+      boost::archive::detail::common_oarchive<boost::mpi::packed_oarchive>::~common_oarchive()in DofMapBuilder.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in DofMapBuilder.cpp.o
+      boost::mpi::packed_oarchive::~packed_oarchive()in DofMapBuilder.cpp.o
+      boost::mpi::packed_oarchive::~packed_oarchive()in DofMapBuilder.cpp.o
+      boost::archive::detail::common_oarchive<boost::mpi::packed_oarchive>::~common_oarchive()in GraphBuilder.cpp.o
+      boost::archive::detail::common_oarchive<boost::mpi::packed_oarchive>::~common_oarchive()in GraphBuilder.cpp.o
+      ...
+  "boost::archive::detail::basic_oarchive::basic_oarchive(unsigned int)", referenced from:
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in DofMapBuilder.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in GraphBuilder.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in XMLFile.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in XMLFunctionData.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in XMLMesh.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in PETScVector.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in SparsityPattern.cpp.o
+      ...
+  "boost::archive::detail::shared_ptr_helper::shared_ptr_helper()", referenced from:
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in DofMapBuilder.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in DofMapBuilder.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in GraphBuilder.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in GraphBuilder.cpp.o
+      boost::mpi::packed_oarchive::packed_oarchive(ompi_communicator_t* const&, unsigned int)in XMLFile.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in XMLFile.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in XMLFunctionData.cpp.o
+      ...
+  "boost::archive::detail::shared_ptr_helper::~shared_ptr_helper()", referenced from:
+      boost::mpi::packed_oarchive::~packed_oarchive()in DofMapBuilder.cpp.o
+      boost::mpi::packed_oarchive::~packed_oarchive()in DofMapBuilder.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in DofMapBuilder.cpp.o
+      boost::mpi::packed_iarchive::~packed_iarchive()in DofMapBuilder.cpp.o
+      boost::mpi::packed_iarchive::~packed_iarchive()in DofMapBuilder.cpp.o
+      boost::mpi::packed_oarchive::~packed_oarchive()in GraphBuilder.cpp.o
+      boost::mpi::packed_oarchive::~packed_oarchive()in GraphBuilder.cpp.o
+      ...
+  "boost::archive::detail::basic_oarchive::save_object(void const*, boost::archive::detail::basic_oserializer const&)", referenced from:
+      boost::mpi::request boost::mpi::communicator::isend_impl<std::vector<unsigned int, std::allocator<unsigned int> > >(int, int, std::vector<unsigned int, std::allocator<unsigned int> > const&, mpl_::bool_<false>) constin DofMapBuilder.cpp.o
+      boost::mpi::request boost::mpi::communicator::isend_impl<std::vector<unsigned int, std::allocator<unsigned int> > >(int, int, std::vector<unsigned int, std::allocator<unsigned int> > const&, mpl_::bool_<false>) constin GraphBuilder.cpp.o
+      void boost::mpi::detail::scatter_impl<std::vector<unsigned int, std::allocator<unsigned int> > >(boost::mpi::communicator const&, std::vector<unsigned int, std::allocator<unsigned int> > const*, std::vector<unsigned int, std::allocator<unsigned int> >*, int, int, mpl_::bool_<false>)in XMLFile.cpp.o
+      void boost::mpi::detail::scatter_impl<std::vector<bool, std::allocator<bool> > >(boost::mpi::communicator const&, std::vector<bool, std::allocator<bool> > const*, std::vector<bool, std::allocator<bool> >*, int, int, mpl_::bool_<false>)in XMLFile.cpp.o
+      void boost::mpi::detail::scatter_impl<std::vector<double, std::allocator<double> > >(boost::mpi::communicator const&, std::vector<double, std::allocator<double> > const*, std::vector<double, std::allocator<double> >*, int, int, mpl_::bool_<false>)in XMLFile.cpp.o
+      void boost::mpi::detail::scatter_impl<std::vector<int, std::allocator<int> > >(boost::mpi::communicator const&, std::vector<int, std::allocator<int> > const*, std::vector<int, std::allocator<int> >*, int, int, mpl_::bool_<false>)in XMLFile.cpp.o
+      boost::mpi::request boost::mpi::communicator::isend_impl<std::vector<unsigned int, std::allocator<unsigned int> > >(int, int, std::vector<unsigned int, std::allocator<unsigned int> > const&, mpl_::bool_<false>) constin XMLFile.cpp.o
+      ...
+  "boost::archive::detail::basic_iarchive::~basic_iarchive()", referenced from:
+      boost::archive::detail::common_iarchive<boost::mpi::packed_iarchive>::~common_iarchive()in DofMapBuilder.cpp.o
+      boost::archive::detail::common_iarchive<boost::mpi::packed_iarchive>::~common_iarchive()in DofMapBuilder.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in DofMapBuilder.cpp.o
+      boost::mpi::packed_iarchive::~packed_iarchive()in DofMapBuilder.cpp.o
+      boost::mpi::packed_iarchive::~packed_iarchive()in DofMapBuilder.cpp.o
+      boost::archive::detail::common_iarchive<boost::mpi::packed_iarchive>::~common_iarchive()in GraphBuilder.cpp.o
+      boost::archive::detail::common_iarchive<boost::mpi::packed_iarchive>::~common_iarchive()in GraphBuilder.cpp.o
+      ...
+  "boost::archive::detail::basic_iarchive::basic_iarchive(unsigned int)", referenced from:
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in DofMapBuilder.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in GraphBuilder.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in XMLFile.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in XMLFunctionData.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in XMLMesh.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in PETScVector.cpp.o
+      boost::mpi::packed_iarchive::packed_iarchive(ompi_communicator_t* const&, unsigned long, unsigned int)in SparsityPattern.cpp.o
+      ...
+  "boost::archive::detail::basic_iarchive::load_object(void*, boost::archive::detail::basic_iserializer const&)", referenced from:
+      boost::optional<boost::mpi::status> boost::mpi::request::handle_serialized_irecv<std::vector<unsigned int, std::allocator<unsigned int> > >(boost::mpi::request*, boost::mpi::request::request_action)in DofMapBuilder.cpp.o
+      boost::optional<boost::mpi::status> boost::mpi::request::handle_serialized_irecv<std::vector<unsigned int, std::allocator<unsigned int> > >(boost::mpi::request*, boost::mpi::request::request_action)in GraphBuilder.cpp.o
+      void boost::mpi::detail::scatter_impl<std::vector<unsigned int, std::allocator<unsigned int> > >(boost::mpi::communicator const&, std::vector<unsigned int, std::allocator<unsigned int> >*, int, int, mpl_::bool_<false>)in XMLFile.cpp.o
+      boost::optional<boost::mpi::status> boost::mpi::request::handle_serialized_irecv<std::vector<unsigned int, std::allocator<unsigned int> > >(boost::mpi::request*, boost::mpi::request::request_action)in XMLFile.cpp.o
+      void boost::mpi::detail::scatter_impl<std::vector<bool, std::allocator<bool> > >(boost::mpi::communicator const&, std::vector<bool, std::allocator<bool> >*, int, int, mpl_::bool_<false>)in XMLFile.cpp.o
+      boost::optional<boost::mpi::status> boost::mpi::request::handle_serialized_irecv<std::vector<bool, std::allocator<bool> > >(boost::mpi::request*, boost::mpi::request::request_action)in XMLFile.cpp.o
+      void boost::mpi::detail::scatter_impl<std::vector<double, std::allocator<double> > >(boost::mpi::communicator const&, std::vector<double, std::allocator<double> >*, int, int, mpl_::bool_<false>)in XMLFile.cpp.o
+      ...
+  "typeinfo for boost::archive::detail::basic_oserializer", referenced from:
+      typeinfo for boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >in DofMapBuilder.cpp.o
+      typeinfo for boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >in GraphBuilder.cpp.o
+      typeinfo for boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >in XMLFile.cpp.o
+      typeinfo for boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<bool, std::allocator<bool> > >in XMLFile.cpp.o
+      typeinfo for boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<double, std::allocator<double> > >in XMLFile.cpp.o
+      typeinfo for boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<int, std::allocator<int> > >in XMLFile.cpp.o
+      typeinfo for boost::archive::detail::oserializer<boost::mpi::packed_oarchive, std::vector<unsigned int, std::allocator<unsigned int> > >in XMLFunctionData.cpp.o
+      ...
+  "typeinfo for boost::archive::detail::basic_iserializer", referenced from:
+      typeinfo for boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >in DofMapBuilder.cpp.o
+      typeinfo for boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >in GraphBuilder.cpp.o
+      typeinfo for boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >in XMLFile.cpp.o
+      typeinfo for boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<bool, std::allocator<bool> > >in XMLFile.cpp.o
+      typeinfo for boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<double, std::allocator<double> > >in XMLFile.cpp.o
+      typeinfo for boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<int, std::allocator<int> > >in XMLFile.cpp.o
+      typeinfo for boost::archive::detail::iserializer<boost::mpi::packed_iarchive, std::vector<unsigned int, std::allocator<unsigned int> > >in XMLFunctionData.cpp.o
+      ...
+  "boost::serialization::typeid_system::extended_type_info_typeid_0::is_less_than(boost::serialization::extended_type_info const&) const", referenced from:
+      vtable for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in DofMapBuilder.cpp.o
+      vtable for boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > > >in DofMapBuilder.cpp.o
+      vtable for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in GraphBuilder.cpp.o
+      vtable for boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > > >in GraphBuilder.cpp.o
+      vtable for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in XMLFile.cpp.o
+      vtable for boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > > >in XMLFile.cpp.o
+      vtable for boost::serialization::extended_type_info_typeid<std::vector<bool, std::allocator<bool> > >in XMLFile.cpp.o
+      ...
+  "boost::serialization::typeid_system::extended_type_info_typeid_0::is_equal(boost::serialization::extended_type_info const&) const", referenced from:
+      vtable for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in DofMapBuilder.cpp.o
+      vtable for boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > > >in DofMapBuilder.cpp.o
+      vtable for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in GraphBuilder.cpp.o
+      vtable for boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > > >in GraphBuilder.cpp.o
+      vtable for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in XMLFile.cpp.o
+      vtable for boost::serialization::detail::singleton_wrapper<boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > > >in XMLFile.cpp.o
+      vtable for boost::serialization::extended_type_info_typeid<std::vector<bool, std::allocator<bool> > >in XMLFile.cpp.o
+      ...
+  "typeinfo for boost::serialization::typeid_system::extended_type_info_typeid_0", referenced from:
+      typeinfo for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in DofMapBuilder.cpp.o
+      typeinfo for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in GraphBuilder.cpp.o
+      typeinfo for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in XMLFile.cpp.o
+      typeinfo for boost::serialization::extended_type_info_typeid<std::vector<bool, std::allocator<bool> > >in XMLFile.cpp.o
+      typeinfo for boost::serialization::extended_type_info_typeid<std::vector<double, std::allocator<double> > >in XMLFile.cpp.o
+      typeinfo for boost::serialization::extended_type_info_typeid<std::vector<int, std::allocator<int> > >in XMLFile.cpp.o
+      typeinfo for boost::serialization::extended_type_info_typeid<std::vector<unsigned int, std::allocator<unsigned int> > >in XMLFunctionData.cpp.o
+      ...
+  "boost::archive::detail::basic_iarchive::reset_object_address(void const*, void const*)", referenced from:
+      boost::serialization::stl::archive_input_seq<boost::mpi::packed_iarchive, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > > >::operator()(boost::mpi::packed_iarchive&, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >&, unsigned int, __gnu_cxx::__normal_iterator<std::vector<unsigned int, std::allocator<unsigned int> >*, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > > >)in XMLFunctionData.cpp.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+make[2]: *** [dolfin/libdolfin.1.0.beta.dylib] Error 1
+make[1]: *** [dolfin/CMakeFiles/dolfin.dir/all] Error 2
+make: *** [all] Error 2
+Failure with exit status: 2
+Exit message: There was a problem building dolfin.

@@ -1,0 +1,155 @@
+diff -r 31226b288a4c dolfin/la/PETScKrylovMatrix.cpp
+--- a/dolfin/la/PETScKrylovMatrix.cpp	Sat Feb 07 09:56:59 2009 +0000
++++ b/dolfin/la/PETScKrylovMatrix.cpp	Sat Feb 07 14:49:28 2009 +0100
+@@ -2,9 +2,10 @@
+ // Licensed under the GNU LGPL Version 2.1.
+ //
+ // Modified by Andy R. Terrel, 2005.
++// Modified by Harish Narayanan, 2009.
+ //
+ // First added:  2005-01-17
+-// Last changed: 2006-05-17
++// Last changed: 2009-02-07
+ 
+ #ifdef HAS_PETSC
+ 
+@@ -156,7 +157,7 @@
+ //-----------------------------------------------------------------------------
+ LogStream& dolfin::operator<< (LogStream& stream, const PETScKrylovMatrix& A)
+ {
+-  MatType type = 0;
++  const MatType type = 0;
+   MatGetType(A.mat(), &type);
+   int m = A.size(0);
+   int n = A.size(1);
+diff -r 31226b288a4c dolfin/la/PETScKrylovSolver.cpp
+--- a/dolfin/la/PETScKrylovSolver.cpp	Sat Feb 07 09:56:59 2009 +0000
++++ b/dolfin/la/PETScKrylovSolver.cpp	Sat Feb 07 14:49:28 2009 +0100
+@@ -3,9 +3,10 @@
+ //
+ // Modified by Anders Logg, 2005-2008.
+ // Modified by Garth N. Wells, 2005-2008.
++// Modified by Harish Narayanan, 2009.
+ //
+ // First added:  2005-12-02
+-// Last changed: 2008-09-26
++// Last changed: 2009-02-07
+ 
+ #ifdef HAS_PETSC
+ 
+@@ -306,13 +307,13 @@
+     return;
+     
+   // Get name of solver
+-  KSPType ksp_type;
++  const KSPType ksp_type;
+   KSPGetType(ksp, &ksp_type);
+ 
+   // Get name of preconditioner
+   PC pc;
+   KSPGetPC(ksp, &pc);
+-  PCType pc_type;
++  const PCType pc_type;
+   PCGetType(pc, &pc_type);
+ 
+   // Report number of iterations and solver type
+diff -r 31226b288a4c dolfin/la/PETScLUSolver.cpp
+--- a/dolfin/la/PETScLUSolver.cpp	Sat Feb 07 09:56:59 2009 +0000
++++ b/dolfin/la/PETScLUSolver.cpp	Sat Feb 07 14:49:28 2009 +0100
+@@ -40,7 +40,7 @@
+   // Initialise solver
+   init();
+ 
+-  MatType mat_type;
++  const MatType mat_type;
+   MatGetType(*A.mat(), &mat_type);
+ 
+   // Convert to UMFPACK matrix if matrix type is MATSEQAIJ and UMFPACK is available.
+@@ -69,13 +69,13 @@
+   KSPSolve(ksp, *b.vec(), *x.vec());
+   
+   // Get name of solver
+-  KSPType ksp_type;
++  const KSPType ksp_type;
+   KSPGetType(ksp, &ksp_type);
+ 
+   // Get name of preconditioner
+   PC pc;
+   KSPGetPC(ksp, &pc);
+-  PCType pc_type;
++  const PCType pc_type;
+   PCGetType(pc, &pc_type);
+   MatGetType(*A.mat(), &mat_type);
+ 
+diff -r 31226b288a4c dolfin/la/PETScMatrix.cpp
+--- a/dolfin/la/PETScMatrix.cpp	Sat Feb 07 09:56:59 2009 +0000
++++ b/dolfin/la/PETScMatrix.cpp	Sat Feb 07 14:49:28 2009 +0100
+@@ -5,9 +5,10 @@
+ // Modified by Andy R. Terrel 2005.
+ // Modified by Ola Skavhaug 2007.
+ // Modified by Magnus Vikstrøm 2007-2008.
++// Modified by Harish Narayanan 2009.
+ //
+ // First added:  2004
+-// Last changed: 2008-12-25
++// Last changed: 2009-02-07
+ 
+ #ifdef HAS_PETSC
+ 
+@@ -108,7 +109,9 @@
+     MatCreateSeqAIJ(PETSC_COMM_SELF, M, N, 50, PETSC_NULL, A.get());
+ 
+     setType();
+-    MatSetOption(*A, MAT_KEEP_ZEROED_ROWS);
++
++    PetscTruth flg = PETSC_TRUE;
++    MatSetOption(*A, MAT_KEEP_ZEROED_ROWS, flg);
+     MatSetFromOptions(*A);
+   }
+ }
+@@ -140,7 +143,8 @@
+     MatSetSizes(*A,  PETSC_DECIDE,  PETSC_DECIDE, M, N);
+     setType();
+     MatSeqAIJSetPreallocation(*A, PETSC_DEFAULT, (int*)nz);
+-    MatSetOption(*A, MAT_KEEP_ZEROED_ROWS);
++    PetscTruth flg = PETSC_TRUE;
++    MatSetOption(*A, MAT_KEEP_ZEROED_ROWS, flg);
+     MatSetFromOptions(*A);
+     MatZeroEntries(*A);
+   }
+@@ -537,9 +541,12 @@
+   MatInfo this_info, other_info;
+   MatGetInfo(*(this->A), MAT_GLOBAL_SUM, &this_info);
+   MatGetInfo(*A.mat(),   MAT_GLOBAL_SUM, &other_info);
+-  return this_info.nz_allocated   == other_info.nz_allocated   &&
+-         this_info.columns_global == other_info.columns_global &&
+-         this_info.rows_global    == other_info.rows_global;
++  PetscInt this_m, this_n, other_m, other_n;
++  MatGetSize(*(this->A), &this_m, &this_n);
++  MatGetSize(*A.mat(), &other_m, &other_n);
++
++  return this_info.nz_allocated   == other_info.nz_allocated &&
++      this_m == other_m && this_n == other_n;
+ }
+ //-----------------------------------------------------------------------------
+ MatType PETScMatrix::getPETScType() const
+@@ -551,12 +558,13 @@
+       return MATMPIAIJ;
+     else
+       return MATSEQAIJ;
+-  case spooles:
+-      return MATSEQAIJSPOOLES;
+-  case superlu:
+-      return MATSUPERLU;
+-  case umfpack:
+-      return MATUMFPACK;
++// The following aren't defined in Petsc 3.0.0's petscmat.h
++//   case spooles:
++//       return MATSEQAIJSPOOLES;
++//   case superlu:
++//       return MATSUPERLU;
++//   case umfpack:
++//       return MATUMFPACK;
+   default:
+     return "default";
+   }
